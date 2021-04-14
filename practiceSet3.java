@@ -29,7 +29,7 @@ public class practiceSet3 {
 		//Q5 Escape Sequence Formatting..
 		
 		
-		String letter1 = "Dear Harry \n This java course is awesome.\t Thanks ";
+		String letter1 = "Dear Harry \n This java course is awesome.\t Thanks " ;
 		
 		System.out.println(letter1);
 		
