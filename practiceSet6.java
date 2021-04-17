@@ -77,41 +77,80 @@ public class practiceSet6 {
             System.out.println(""); // Prints a new line
         }
         
-        
-        //Q6. Finding the maximum element in the array and java array
-        
-        int [] arr = {1, 2100, 3, 455, 5, 34, 67};
-        
-        int max = Integer.MIN_VALUE;
-        
-        	for(int element: arr){
-        		if(max>element){
-        			max = element;
-        		}
-        	}
-        	
-        	System.out.println("The maximum element is : "+max);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+		//Q5. Write a Java program to reverse an array.
+		
+		int [] revA = {1, 2100, 3, 455, 5, 34, 67};
+		int l = revA.length;
+        	int n = Math.floorDiv(l,2);
+		int temp;
+		
+		for(int i=0;i<n;i++){
+			//Swapping the values
+			   temp = revA[i];
+			   revA[i] = revA[l-1-i]; 
+			   revA[l-1-i] = temp;
+		}
+		
+			for(int element: revA){
+				System.out.print(element +" ");
+			}
+			
+		System.out.println(" ");
+		
+		
+		//Q6. Finding the maximum element in the array and java array
+		
+		int [] arr = {1, 2100, 3, 455, 5, 34, 67};
+		
+		int max = Integer.MIN_VALUE;
+		
+			for(int element: arr){
+				if(element>max){
+					max = element;
+				}
+			}
+			
+			System.out.println("The maximum element is : "+max);
+		
+		//Q7. Write a Java program to find whether an array is sorted or not.
+		
+		
+		int [] sample_arr = {2,3,5,33,115,300,718};
+		boolean isSorted = true;
+		
+		for(int i=0;i<sample_arr.length-1;i++){
+			if(sample_arr[i] > sample_arr[i+1]) {
+				isSorted = false;
+				break;
+			} 
+		}
+		
+		if(isSorted){
+			System.out.println("Given Array is sorted ");
+		}
+		else{
+			System.out.println("Given Array is not Sorted ");
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
         
         
         
